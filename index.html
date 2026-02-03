@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cravin - Midnight snack delivery for hostel students. Order now!">
+    <title>Cravin | Midnight Snack Delivery</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <!-- Animated background elements -->
+            <div class="bg-elements">
+                <div class="moon"></div>
+                <div class="star star-1"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="badge fade-in">🌙 Live Now</div>
+                <h1 class="hero-title fade-in-up">
+                    Midnight hunger?<br>
+                    <span class="gradient-text">We've got you covered.</span>
+                </h1>
+                <p class="hero-subtitle fade-in-up delay-1">
+                    Late-night snack delivery exclusively for hostel students.
+                </p>
+                <div class="hero-cta fade-in-up delay-2">
+                    <a href="#order" class="btn btn-primary">
+                        <span>Order Now</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <p class="cta-note">⏰ Available 11:30 PM – 2:00 AM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <h2 class="section-title fade-in-scroll">Why Cravin?</h2>
+            <div class="problem-grid">
+                <div class="problem-card fade-in-scroll delay-1">
+                    <div class="card-icon">🏪</div>
+                    <h3>Shops Close Early</h3>
+                    <p>Hostel canteens and nearby shops shut down by 9 PM, leaving students hungry.</p>
+                </div>
+                <div class="problem-card fade-in-scroll delay-2">
+                    <div class="card-icon">🚫</div>
+                    <h3>Limited Delivery</h3>
+                    <p>Food delivery apps have restricted hours and limited options for late-night orders.</p>
+                </div>
+                <div class="problem-card fade-in-scroll delay-3">
+                    <div class="card-icon">🕐</div>
+                    <h3>Peak Hunger Hours</h3>
+                    <p>Cravings hit hardest between midnight and 2 AM when everything is closed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-Time Traffic Section -->
+    <section class="traffic-section" id="traffic">
+        <div class="container">
+            <h2 class="section-title fade-in-scroll">Live Activity</h2>
+            <p class="section-subtitle fade-in-scroll">See what's happening right now</p>
+            
+            <div class="traffic-grid">
+                <!-- Active Users Card -->
+                <div class="traffic-card fade-in-scroll delay-1">
+                    <div class="traffic-icon">👥</div>
+                    <div class="traffic-value" id="activeUsers">0</div>
+                    <div class="traffic-label">Active Users</div>
+                    <div class="traffic-subtext">Browsing now</div>
+                </div>
+                
+                <!-- Today's Orders Card -->
+                <div class="traffic-card fade-in-scroll delay-2">
+                    <div class="traffic-icon">🛒</div>
+                    <div class="traffic-value" id="todayOrders">0</div>
+                    <div class="traffic-label">Orders Today</div>
+                    <div class="traffic-subtext">Last 24 hours</div>
+                </div>
+                
+                <!-- Total Deliveries Card -->
+                <div class="traffic-card fade-in-scroll delay-3">
+                    <div class="traffic-icon">📦</div>
+                    <div class="traffic-value" id="totalDeliveries">0</div>
+                    <div class="traffic-label">Total Deliveries</div>
+                    <div class="traffic-subtext">Since launch</div>
+                </div>
+                
+                <!-- Average Delivery Time Card -->
+                <div class="traffic-card fade-in-scroll delay-4">
+                    <div class="traffic-icon">⚡</div>
+                    <div class="traffic-value"><span id="avgTime">0</span><span class="unit">min</span></div>
+                    <div class="traffic-label">Avg Delivery</div>
+                    <div class="traffic-subtext">Door to door</div>
+                </div>
+            </div>
+
+            <!-- Live Activity Feed -->
+            <div class="activity-feed fade-in-scroll delay-1">
+                <h3 class="feed-title">Recent Activity</h3>
+                <div class="activity-list" id="activityFeed">
+                    <!-- Activities will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <h2 class="section-title fade-in-scroll">Place a Midnight Order</h2>
+            <p class="section-subtitle fade-in-scroll">Fill out the form below and we'll deliver to your hostel.</p>
+            
+            <div class="order-card fade-in-scroll delay-1">
+                <div class="order-status">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Orders open: 11:30 PM – 2:00 AM</span>
+                    </div>
+                </div>
+                
+                <!-- Embedded Google Form -->
+                <div class="form-container">
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSf_REPLACE_WITH_YOUR_FORM_ID/viewform?embedded=true" 
+                        width="100%" 
+                        height="800" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">
+                        Loading form...
+                    </iframe>
+                </div>
+                
+                <div class="order-note">
+                    <p>⚡ Replace the iframe src with your actual Google Form embed link</p>
+                    <p>🔗 To get the link: Open your form → Send → Click embed icon → Copy HTML</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3 class="footer-brand">Cravin</h3>
+                    <p>Midnight snacks for hostel students</p>
+                    <p class="footer-tag">Operating since 2024</p>
+                </div>
+                
+                <div class="footer-right">
+                    <a href="https://github.com/yourusername/cravin" target="_blank" class="footer-link" aria-label="View on GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cravin. Made for hostel students who refuse to sleep hungry.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
